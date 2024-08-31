@@ -1,0 +1,161 @@
+/* Apply box-sizing border-box model to all elements to include padding and border in the element's total width and height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the body element */
+body {
+    background-color: #e0f7fa; /* Light blue background color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up the full viewport height */
+    margin: 0;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Main heading styles */
+.heading {
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text color */
+}
+
+/* Container styles to hold todo cards */
+.container {
+    margin-top: 50px;
+    /* align-items: center; -- Uncomment if you want to center items within the container */
+
+    display: flex;
+    justify-content: space-around; /* Distribute space around cards */
+    width: 100%;
+    max-width: 1200px; /* Maximum width of the container */
+    flex-wrap: wrap; /* Allows cards to wrap onto new lines on smaller screens */
+}
+
+/* Styles for individual todo cards */
+.card {
+    background-color: #c6ffc4; /* Light green background color */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    width: 22%; /* Card width as a percentage of container */
+    padding: 15px; /* Inner spacing */
+    margin: 10px; /* Outer spacing between cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    min-width: 250px; /* Minimum width of cards to ensure readability */
+}
+
+/* Styles for heading inside cards */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text color */
+}
+
+/* Styles for unordered list inside cards */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+/* Styles for list items inside cards */
+li {
+    display: flex;
+    justify-content: space-between; /* Space between text and buttons */
+    align-items: center;
+    padding: 10px 15px; /* Inner spacing */
+    margin-bottom: 10px; /* Spacing between list items */
+    background-color: #f9f9f9; /* Light grey background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+/* Hover effect for list items */
+li:hover {
+    transform: scale(1.02); /* Slightly scale up the list item */
+}
+
+/* General button styles */
+button {
+    border: none; /* Remove default border */
+    background-color: transparent; /* Transparent background */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for disabled buttons */
+button:disabled {
+    color: #ccc; /* Grey text color for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Styles for left navigation buttons */
+.nav-btn-left {
+    color: #28a745; /* Green color for left button */
+}
+
+/* Styles for right navigation buttons */
+.nav-btn-right {
+    color: #007bff; /* Blue color for right button */
+}
+
+/* Responsive layout for medium-sized screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    .card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+/* Responsive layout for small screens (e.g., phones) */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* One card per row */
+        margin: 15px 0; /* Adjust margin for better spacing */
+    }
+}
+
+/* Mobile adjustments for font sizes and button spacing */
+@media (max-width: 480px) {
+    li {
+        font-size: 14px; /* Slightly smaller font size for mobile screens */
+    }
+    button {
+        font-size: 14px; /* Smaller font size for buttons on mobile */
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px; /* Padding around footer content */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Shadow to separate from main content */
+    margin-top: auto; /* Ensure footer sticks to the bottom of the viewport */
+}
+
+/* Styles for paragraphs in the footer */
+footer p {
+    margin: 5px 0; /* Adjust margin for better spacing */
+}
+
+/* Styles for links in the footer */
+footer a {
+    color: #00bcd4; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for links in the footer */
+footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

@@ -1,0 +1,381 @@
+/* style.css
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #007bff;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#feedback {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#guess-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#guess-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#guess-button:hover, #restart-button:hover {
+    background-color: #0056b3;
+}
+
+#chances {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    #guess-input {
+        width: 80px;
+    }
+
+    #guess-button, #restart-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
+
+/* style.css */
+/* ------------------------ */
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #007bff;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#feedback {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#guess-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#guess-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#guess-button:hover, #restart-button:hover {
+    background-color: #0056b3;
+}
+
+#chances {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    #guess-input {
+        width: 80px;
+    }
+
+    #guess-button, #restart-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
+/* ------- */
+/* style.css */
+/* body {
+    margin: 0;
+    background-color: #007bff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#feedback {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#guess-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#guess-button, #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#guess-button:hover, #restart-button:hover {
+    background-color: #0056b3;
+}
+
+#chances {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    #guess-input {
+        width: 80px;
+    }
+
+    #guess-button, #restart-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+} */
+/* General body styling */
+body {
+    margin: 0;
+    background-color: #007bff; /* Set background color */
+    font-family: Arial, sans-serif; /* Set font */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Styling for the game container */
+.game-container {
+    background-color: white; /* White background for the game box */
+    padding: 20px; /* Padding inside the game box */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the main heading */
+h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Styling for feedback text */
+#feedback {
+    margin: 10px 0; /* Space above and below the feedback */
+    font-size: 18px; /* Larger font for visibility */
+    font-weight: bold; /* Bold text */
+}
+
+/* Styling for the input field */
+#guess-input {
+    width: 100px; /* Width of the input field */
+    padding: 10px; /* Padding inside the input */
+    font-size: 16px; /* Font size */
+    margin-right: 10px; /* Space to the right of the input */
+}
+
+/* Styling for the buttons */
+#guess-button, #restart-button {
+    padding: 10px 20px; /* Padding inside the buttons */
+    font-size: 16px; /* Font size */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove borders */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons */
+#guess-button:hover, #restart-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the chances text */
+#chances {
+    margin-top: 10px; /* Space above the chances text */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Center the text in the footer */
+    padding: 10px; /* Padding inside the footer */
+    background-color: #0056b3; /* Background color of the footer */
+    color: white; /* Text color */
+    width: 100%; /* Full width */
+    position: absolute; /* Position at the bottom */
+    bottom: 0; /* Stick to the bottom */
+}
+
+/* Styling for the text inside the footer */
+footer p {
+    margin: 5px 0; /* Small margin above and below the text */
+}
+
+/* Container for the scrolling text */
+.scrolling-text {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Keep text in a single line */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Animation for the scrolling text */
+.scrolling-text p {
+    display: inline-block; /* Inline-block for scrolling */
+    padding-left: 100%; /* Start the text off-screen */
+    animation: scroll 15s linear infinite; /* Scrolling animation */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    /* Adjust input width for small screens */
+    #guess-input {
+        width: 80px;
+    }
+
+    /* Make buttons full width on small screens */
+    #guess-button, #restart-button {
+        width: 100%;
+        margin-top: 10px; /* Add space between buttons */
+    }
+}
